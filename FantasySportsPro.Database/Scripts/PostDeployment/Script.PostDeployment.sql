@@ -1,0 +1,1 @@
+﻿:r .\SeedTableScripts\SeedTable_SportAssociationLookup.sql
