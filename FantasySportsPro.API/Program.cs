@@ -23,5 +23,3 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
-
-//Server=localhost;Database=master;Trusted_Connection=True;-

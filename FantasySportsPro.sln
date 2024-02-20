@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FantasySportsPro.Applicatio
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "FantasySportsPro.Database", "FantasySportsPro.Database\FantasySportsPro.Database.sqlproj", "{3658CB71-955D-4BFD-9078-099FBA2B58DB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FantasySportsPro.Persistence.Tests", "FantasySportsPro.Persistence.Tests\FantasySportsPro.Persistence.Tests.csproj", "{98099E3F-A8F6-4B10-84E3-DC149C715F25}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,9 +45,16 @@ Global
 		{3658CB71-955D-4BFD-9078-099FBA2B58DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3658CB71-955D-4BFD-9078-099FBA2B58DB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3658CB71-955D-4BFD-9078-099FBA2B58DB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{98099E3F-A8F6-4B10-84E3-DC149C715F25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98099E3F-A8F6-4B10-84E3-DC149C715F25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98099E3F-A8F6-4B10-84E3-DC149C715F25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98099E3F-A8F6-4B10-84E3-DC149C715F25}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{98099E3F-A8F6-4B10-84E3-DC149C715F25} = {DE5E6ABB-18EB-4CE2-A7CD-F60B5118B181}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {87BC3B11-0F68-4501-B6EE-AE476AB193A4}
