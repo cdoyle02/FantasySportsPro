@@ -6,17 +6,31 @@ namespace FantasySportsPro.Persistance.DataRequests.Players
 {
     public class FetchPlayer : IDataFetch<Player>
     {
+        #region Properties
+
         public int? Id { get; set; }
         public string? FirstName { get; set; }
         public string? LastName { get; set; }
         public DateTime? DateOfBirth { get; set; }
-        public FetchPlayer(int id) => Id = id;
+
+        #endregion
+
+        #region Constructors
+
+        public FetchPlayer(int id) => 
+            Id = id;
+
         public FetchPlayer(string firstName, string lastName, DateTime? dateOfBirth)
         {
             FirstName = firstName;
             LastName = lastName;
             DateOfBirth = dateOfBirth;
         }
+
+        #endregion
+
+        #region Public Methods
+
         public object? GetParameters()
         {
             if (Id != null)
@@ -29,5 +43,7 @@ namespace FantasySportsPro.Persistance.DataRequests.Players
             Id != null
                 ? $@"SELECT * FROM {DatabaseConstants.TableNames.Players} WHERE Id = @Id"
                 : $@"SELECT * FROM {DatabaseConstants.TableNames.Players} WHERE FirstName = @FirstName AND LastName = @LastName AND (@DateOfBirth IS NULL OR DateOfBirth = @DateOfBirth)";
+
+        #endregion
     }
 }

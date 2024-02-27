@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[TeamPlayers]
 (
-	[Id] INT NOT NULL PRIMARY KEY,
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY(1, 1),
 	[TeamLookUpId] INT NOT NULL CONSTRAINT [FK_TeamLookup_TeamPlayers] FOREIGN KEY REFERENCES TeamLookUp(Id),
 	[PlayerId] INT NOT NULL CONSTRAINT [FK_Players_TeamPlayers] FOREIGN KEY REFERENCES Players(Id)
 )

@@ -16,4 +16,8 @@
     <ProjectReference Include="..\FantasySportsPro.Domain\FantasySportsPro.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="DataRequests\SportAssociationLookUp\" />
+  </ItemGroup>
+
 </Project>
