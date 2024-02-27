@@ -43,7 +43,7 @@ namespace FantasySportsPro.Persistance.DataRequests.TeamLookUp
         public string GetSql() =>
             SportAssocationId != null
                 ? $@"SELECT * FROM {DatabaseConstants.TableNames.TeamLookUp} WITH(NOLOCK) WHERE State LIKE '%@State%' AND SportAssociationId = @SportAssociationId"
-                : $@"SELECT * FROM {DatabaseConstants.TableNames.TeamLookUp} WITH(NOLOCK) WHERE State = '%@State%'";
+                : $@"SELECT * FROM {DatabaseConstants.TableNames.TeamLookUp} WITH(NOLOCK) WHERE State LIKE '%@State%'";
 
         #endregion
     }

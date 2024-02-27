@@ -42,7 +42,7 @@ namespace FantasySportsPro.Persistance.DataRequests.TeamLookUp
         public string GetSql() =>
             SportAssociationId != null
                 ? $@"SELECT * FROM {DatabaseConstants.TableNames.TeamLookUp} WITH(NOLOCK) WHERE City LIKE '%@City%' AND SportAssociationId = @SportAssociationId"
-                : $@"SELECT * FROM {DatabaseConstants.TableNames.TeamLookUp} WITH(NOLOCK) WHERE City = '%@City%'";
+                : $@"SELECT * FROM {DatabaseConstants.TableNames.TeamLookUp} WITH(NOLOCK) WHERE City LIKE '%@City%'";
 
         #endregion
     }
